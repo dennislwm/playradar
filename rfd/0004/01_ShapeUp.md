@@ -30,15 +30,15 @@ Unfortunately, `yt-dlp`, an open source tool, stopped working in GitHub's pipeli
 An error message from a [GitHub pipeline](https://github.com/dennislwm/playscribe/actions/runs/10508253536/job/29111740690) states `ERROR: [youtube] SS4HP4oraoU: Sign in to confirm you’re not a bot. This helps protect our community. Learn more`.
 See also an [open issue #10128](https://github.com/yt-dlp/yt-dlp/issues/10128) on `yt-dlp`.
 
-Bets are a few well-shaped, risk-reduced options to review. Each bet has an appetite with a fixed time, and a risk that looks like a thin-tailed probability distribution. In other words, there's a slight chance that it could take an extra week, but it shouldn't become a rabbit hole.
-
-The issue with `yt-dlp` has a risk of a fat-tailed timeline, as finding a workaround may be a rabbit hole. Also, finding a replacement for `yt-dlp` is also a possible rabbit hole as it could result in inaccurate transcripts, or a high costs for using paid services, etc.
+`yt-dlp`'s issue has a risk of a fat-tailed timeline, as finding a workaround may be a rabbit hole. Also, finding a replacement for `yt-dlp` is also a possible rabbit hole as it could result in inaccurate transcripts, or a high costs for using paid services, etc.
 
 ## What happened to `fabric`?
 
 A new release of `fabric` 2.0 resulted in a breaking change to `playscribe`'s `Dockerfile`, as its installation process was changed from `pipx` to `go install`.
 
 ## Possible Solutions
+
+Bets are a few well-shaped, risk-reduced options to review. Each bet has an appetite with a fixed time, and a risk that looks like a thin-tailed probability distribution. In other words, there's a slight chance that it could take an extra week, but it shouldn't become a rabbit hole.
 
 Rank all possible solutions in order of ascending appetite:
 
