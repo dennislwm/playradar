@@ -24,7 +24,7 @@ The runbook [Creating a config JSON file for Portainer stack](https://gitlab.com
         "silverbullet": {
           "image": "zefhemel/silverbullet",
           "ports": ["8090:3000"],
-          "environment": ["SB_SHELL_BACKEND=off", "SB_SPACE_SCRIPT=off"],
+          "environment": ["SB_USER=$SB_USER", "SB_SHELL_BACKEND=off", "SB_SPACE_SCRIPT=off"],
           "volumes": [
             "silverbullet_vol_space:/space"
           ]
@@ -64,6 +64,7 @@ services:
     ports:
       - 8090:3000
     environment:
+      - SB_USER=$SB_USER
       - SB_SHELL_BACKEND=off
       - SB_SPACE_SCRIPT=off
     volumes:
@@ -74,5 +75,6 @@ volumes:
 ```
 
 3. Add any sensitive environment variables using the Portainer UI.
+  - `SB_USER`: `admin:password`
 
 4. Click **Deploy the stack** and wait for it to be deployed.
