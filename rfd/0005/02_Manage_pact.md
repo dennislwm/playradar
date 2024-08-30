@@ -67,10 +67,10 @@ services:
       - SB_SHELL_BACKEND=off
       - SB_SPACE_SCRIPT=off
     volumes:
-      - silverbullet_vol_space:/space
+      - vol_space:/space
 
 volumes:
-  silverbullet_vol_space:
+  vol_space:
 ```
 
 3. Add any sensitive environment variables using the Portainer UI.
