@@ -42,10 +42,16 @@ Bets are a few well-shaped, risk-reduced options to review. Each bet has an appe
 
 Rank all possible solutions in order of ascending appetite:
 
-| Rank |  Appetite   |   Tool   |                             Solution                             |
-|:----:|:-----------:|:--------:|:----------------------------------------------------------------:|
-|  1   |  Immediate  | `yt-dlp` |            Use `playscribe` on your local workstation            |
-|  2   | A few weeks | `yt-dlp` | Sign in using [authentication options][s01] in a GitHub pipeline |
-|  3   | A few weeks | `fabric` | Refactor `Dockerfile` to install `fabric` with `go install` |
+| Rank |   Appetite   |   Tool   |                             Solution                             |
+|:----:|:------------:|:--------:|:----------------------------------------------------------------:|
+|  1   |  Immediate   | `yt-dlp` |            Use `playscribe` on your local workstation            |
+|  2   | A few weeks  | `fabric` |   Refactor `Dockerfile` to install `fabric` with `go install`    |
+|  3   | A few months | `yt-dlp` |        Sign in using [cookies][s02] in a GitHub pipeline         |
+|  4   |  Indefinite  | `yt-dlp` | Sign in using [authentication options][s01] in a GitHub pipeline |
 
 [s01]: https://github.com/yt-dlp/yt-dlp#authentication-options
+[s02]: https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp
+
+> Note: `yt-dlp` does not support login with password for YouTube.
+
+> **Warning**: You can export your cookies from a browser using `yt-dlp --cookies-from-browser chrome --cookies cookies.txt`. However, this results in a text file that contains your browser's cookies for ALL sites, which increases security risk.
