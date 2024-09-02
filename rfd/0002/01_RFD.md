@@ -1,24 +1,36 @@
 ---
-state: discussion
 authors: dennislwm
-title: Markopolis
-description: A web app and API server designed to serve Markdown files.
+title: playpolis
+description: An automation workflow for aggregating and displaying markdown files from GitHub, GitLab and local projects.
+piped_from: Idea
+piped_to: RFD
+state: discussion
 labels: self-host, api, markdown, web-app
 ---
 
 # Introduction
 
-Markopolis is a web app and API server designed to serve Markdown files.
+[Markopolis](https://github.com/rishikanthc/markopolis) is a web app and API server designed to serve Markdown files.
 
 * Allows you to share Markdown notes as websites and interact with and manipulate your Markdown files using an API.
 
 * Run a CLI in your local workstation and point it to a directory holding all your Markdown files and images, and the library takes care of everything else.
 
-## Why Markopolis?
+[SilverBullet](https://github.com/silverbulletmd/silverbullet) is a note-taking web application stored as Markdown files.
+
+* Annotate your notes using Frontmatter.
+
+* Support two client modes Online and Sync.
+
+* Create reusable Templates using a Templates Language.
+
+* Build applications in your note apps using End-User Programming.
+
+## Why `playpolis`?
 
 1. Currently, there is no centralised method for aggregating and displaying markdown files from GitHub, GitLab and local projects. This results in a document sprawl and it becomes unwieldy and inefficient to manage playbooks, runbooks, and other documents.
 
-2. Markopolis provides an automated way to publish and share markdown notes as a web site, which could be a self-hosted site that allows public access through Cloudflare reverse proxy and SSO only, hence providing additional safeguards for sensitive notes.
+2. `playpolis` provides an automated way to publish and share markdown notes as a web site, which could be a self-hosted site that allows public access through Cloudflare reverse proxy and SSO only, hence providing additional safeguards for sensitive notes.
 
 3. A `git-sync` tool can be used to automate retrieval of a `wiki` from any GitHub or GitLab project.
 
