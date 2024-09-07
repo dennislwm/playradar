@@ -19,7 +19,7 @@ The runbook [Creating a config JSON file for Portainer stack](https://gitlab.com
           "image": "ananthakumaran/paisa",
           "ports": ["7500:7500"],
           "volumes": [
-            "~/data/paisa/:/root/Documents/paisa/"
+            "/home/dennislwm/data/paisa/:/root/Documents/paisa/"
           ]
         }
       }
