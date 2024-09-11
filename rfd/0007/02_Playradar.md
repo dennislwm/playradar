@@ -66,6 +66,8 @@ services:
   anythingllm:
     image: mintplexlabs/anythingllm
     restart: unless-stopped
+    cap_add:
+      - SYS_ADMIN
     environment:
       - STORAGE_DIR=/app/server/storage
     volumes:
