@@ -5,7 +5,7 @@ description: An Enhanced ChatGPT Clone completely open-source for self-hosting.
 piped_from: Idea
 piped_to: Playradar
 quadrant: platforms
-rings: assess
+rings: hold
 org_size: medium
 ---
 
@@ -15,6 +15,8 @@ org_size: medium
 
 1. UI matching ChatGPT, including Dark mode, Streaming, and latest updates;
 2. integrates and enhances original client features such as conversation and message search, prompt templates and plugins;
+
+LibreChat has been replaced by or pivoted to AnythingLLM, as LibreChat has more service dependencies and appears to have more complex configurations.
 
 # Installation via Docker
 

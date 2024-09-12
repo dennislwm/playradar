@@ -15,7 +15,7 @@ The runbook [Creating a config JSON file for Portainer stack](https://gitlab.com
   "data": {
     "variables": {
       "services": {
-        "paisa": {
+        "anythingllm": {
           "image": "mintplexlabs/anythingllm",
           "ports": ["3001:3001"],
           "environment": ["STORAGE_DIR=/app/server/storage"],

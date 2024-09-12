@@ -16,6 +16,8 @@ org_size: small
 1. allows you to pick and choose which LLM or Vector Database you want to use as well as supporting multi-user management and permissions;
 2. Workspace functions a lot like a thread, but with the addition of containerization of your documents;
 
+AnythingLLM has replaced LibreChat due to its fairly simple configuration, and use of an embedded vector database, with no external service dependencies.
+
 # Installation Options
 
 You have a few options here:
