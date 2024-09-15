@@ -26,6 +26,7 @@ piped_to: Make_docker
 ```sh
 export DOCKER=docker
 export DOCKER_IMAGE=gsmallpdf:arm64
+export DOCKER_TOOLS="ghostscript pdftk-java poppler-utils"
 ```
 
 2. Edit `Makefile` file.
@@ -49,7 +50,7 @@ ifndef DOCKER_PS
 endif
 
 ci_build: check_env
-  @DOCKER_BUILDKIT=1 $(DOCKER) build -t $(DOCKER_IMAGE) .
+  @DOCKER_BUILDKIT=1 $(DOCKER) build --build-arg TOOLS=$(DOCKER_TOOLS) -t $(DOCKER_IMAGE) .
 
 docker_clean: check_env
   @$(DOCKER) image prune -f
