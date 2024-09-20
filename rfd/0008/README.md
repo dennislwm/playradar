@@ -2,8 +2,8 @@
 authors: dennislwm
 title: playscholar
 description: An automated process to summarize a web page URL with ChatGPT.
-piped_from: Make_shell
-piped_to: RFD
+piped_from: Manage_github_action_registry
+piped_to: README
 state: committed
 ---
 
@@ -29,11 +29,13 @@ state: committed
 
 5. This service does not require a backend server as the processing will be performed using ephemeral runners.
 
-6. Scraping can be complex and often blocked, and raw HTML is cluttered with extraneuous elements like markups and scripts. The Reader API addresses these issues by extracting the core content from a URL and converting it into clean, LLM-friendly text, ensuring high-quality input for your agent and RAG systems.
+6. This service uses a [distroless image][r04] that drastically reduces the image size, resulting in a faster execution time for its emphemeral runners.
 
-7. Reader API is multi-modal which means that images on the web page are automatically captioned using a vision language model in the reader and formatted as image alt tags in the output. It natively supports PDF reading and is compatible with most PDFs.
+7. Scraping can be complex and often blocked, and raw HTML is cluttered with extraneuous elements like markups and scripts. The Reader API addresses these issues by extracting the core content from a URL and converting it into clean, LLM-friendly text, ensuring high-quality input for your agent and RAG systems.
 
-8. Reader API is available for free and offers flexible rate limit and pricing.
+8. Reader API is multi-modal which means that images on the web page are automatically captioned using a vision language model in the reader and formatted as image alt tags in the output. It natively supports PDF reading and is compatible with most PDFs.
+
+9. Reader API is available for free and offers flexible rate limit and pricing.
 
 # Limitation
 
@@ -48,3 +50,4 @@ This project has several limitations:
 [r01]: https://github.com/dennislwm/playscribe
 [r02]: https://jina.ai/reader
 [r03]: https://github.com/dennislwm/playscholar
+[r04]: https://github.com/dennislwm/playscholar/pkgs/container/fabric
